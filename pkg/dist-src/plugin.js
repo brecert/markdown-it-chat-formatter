@@ -1,6 +1,6 @@
-import underline from './plugins/underline.js';
-import noParagraph from './plugins/no_paragraph.js';
-import newline from './plugins/newline.js';
+import underline from './plugins/underline';
+import noParagraph from './plugins/no_paragraph';
+import newline from './plugins/newline';
 export default function (md) {
     md.set({
         html: false,
