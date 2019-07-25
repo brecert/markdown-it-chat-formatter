@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-chat-formatter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a chat formatter using markdown-it",
   "author": "Brecert",
   "license": "MIT",
