@@ -1,0 +1,53 @@
+{
+  "name": "chat-formatter",
+  "version": "0.0.1",
+  "description": "a chat formatter using markdown-it",
+  "author": "Brecert",
+  "license": "MIT",
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "exclude": [
+            "test/**/*",
+            "examples/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "pika-pack build",
+    "test": "ts-mocha -p test/tsconfig.json test/**/*.spec.ts"
+  },
+  "dependencies": {
+    "markdown-it": "^9.0.1",
+    "markdown-it-underline": "^1.0.1",
+    "marked": "^0.7.0"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.4.0",
+    "@pika/plugin-build-node": "^0.4.0",
+    "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-ts-standard-pkg": "^0.4.0",
+    "@types/chai": "^4.1.7",
+    "@types/highlight.js": "^9.12.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.8",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.5.3"
+  },
+  "source": "pkg/dist-src/index.js",
+  "types": "pkg/dist-types/index.d.ts",
+  "main": "pkg/dist-node/index.js",
+  "module": "pkg/dist-web/index.js"
+}
