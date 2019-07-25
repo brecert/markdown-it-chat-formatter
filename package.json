@@ -1,5 +1,5 @@
 {
-  "name": "chat-formatter",
+  "name": "markdown-it-chat-formatter",
   "version": "0.0.1",
   "description": "a chat formatter using markdown-it",
   "author": "Brecert",
@@ -25,7 +25,8 @@
   },
   "scripts": {
     "build": "pika-pack build",
-    "test": "ts-mocha -p test/tsconfig.json test/**/*.spec.ts"
+    "test": "ts-mocha -p test/tsconfig.json test/**/*.spec.ts",
+    "version": "npm run build"
   },
   "dependencies": {
     "markdown-it": "^9.0.1",
